@@ -1,0 +1,13 @@
+.mysocial{
+    background-color: white;
+    border-radius: 4px;
+    color: blueviolet;
+    padding:6px;
+    text-decoration: none;
+}
+
+.mysocial a {
+    text-decoration: none;
+    color: blueviolet;
+    padding-bottom: 10px;
+}
