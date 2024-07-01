@@ -20,11 +20,7 @@ header {
     color: white;
 }
 
-a{
-    color: white;
-    padding-left: 5px;
-    text-decoration: none;
-}
+
 .blog-contact h1{
     font-size: 25px;  
 }
@@ -59,10 +55,9 @@ nav ul li a {
 }
 
 .hero {
-    background: url('hero.jpg') no-repeat center center/cover;
+    padding-top: 5%;
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
 }
 
 .hero h1 {
