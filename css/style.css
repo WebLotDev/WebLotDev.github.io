@@ -10,6 +10,10 @@ body {
     color: white;
 }
 
+img.logo_back{
+  width: 60px;
+  height: 60px;
+  padding-top: 10px; }
   .search-container {
             display: flex;
             justify-content: center;
