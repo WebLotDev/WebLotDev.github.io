@@ -49,6 +49,7 @@ img.logo_back{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(33.333% - 20px);
     box-sizing: border-box;
+    color:black;
 }
 
 .post h2 {
