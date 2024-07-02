@@ -2,7 +2,7 @@ const htmlContent = `
 <header>
     <div class="show_desktop">
         <nav>
-            <div class="logo"><a href="www.weblot.gr"><img src="./files/img/logo-head.png" width="20%"></a></div>
+            <div class="logo"><a href="www.weblot.gr"><img src="www.weblot.gr/files/img/logo-head.png" width="20%"></a></div>
             <ul>
                 <li><a href="www.weblot.gr">Home</a></li>
                 <li><a href="www.weblot.gr/#about">About</a></li>
@@ -12,7 +12,7 @@ const htmlContent = `
         </nav>
     </div>
     <div class="show_mobile">
-        <div class="logo"><a href="#home"><img src="./files/img/logo-head.png" width="20%" style="margin-left: 40%;"></a></div>
+        <div class="logo"><a href="#home"><img src="www.weblot.gr/files/img/logo-head.png" width="20%" style="margin-left: 40%;"></a></div>
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
             <label for="openSidebarMenu" class="sidebarIconToggle">
                 <div class="spinner diagonal part-1"></div>
