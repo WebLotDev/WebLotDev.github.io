@@ -15,16 +15,35 @@
 </head>
 <body>
     <header>
+    <div class="show_desktop">
         <nav>
-            <div class="logo"><a href="http://weblot.gr/#home"><img src="https://weblot.gr/files/img/logo-head.png" width="20%"></a></div>
+            <div class="logo"><a href="www.weblot.gr"><img src="./files/img/logo-head.png" width="20%"></a></div>
             <ul>
-                <li><a href="http://weblot.gr/#home">Home</a></li>
-                <li><a href="http://weblot.gr/#about">About</a></li>
-                <li><a href="http://weblot.gr/#post">Blog</a></li>
-                <li><a href="http://weblot.gr/#contact">Contact</a></li>
+                <li><a href="www.weblot.gr">Home</a></li>
+                <li><a href="www.weblot.gr/#about">About</a></li>
+                <li><a href="www.weblot.gr/post">Blog</a></li>
+                <li><a href="www.weblot.gr/#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+    <div class="show_mobile">
+        <div class="logo"><a href="#home"><img src="./files/img/logo-head.png" width="20%" style="margin-left: 40%;"></a></div>
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu" style="overflow: auto;">
+                <ul class="sidebarMenuInner">
+                    <li class="li-menu"><a href="www.weblot.gr">Home</a></li>
+                <li class="li-menu"><a href="www.weblot.gr/#about">About</a></li>
+                <li class="li-menu"><a href="www.weblot.gr/post">Blog</a></li>
+                <li class="li-menu"><a href="www.weblot.gr/#contact">Contact</a></li>
+                </ul>
+            </div>
+    </div>
+</header>
     <br>
     <main style="padding-bottom: 100px;">
         <br><br><br><br>
