@@ -6,16 +6,6 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed; /* Fixed position */
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure it is above other content */
-}
-
 .blog-contact{
     color: white;
 }
@@ -24,50 +14,7 @@ header {
 .blog-contact h1{
     font-size: 25px;  
 }
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
-nav .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero {
-    padding-top: 5%;
-    color: #fff;
-    text-align: center;
-}
-
-.hero h1 {
-    margin: 0;
-    font-size: 3em;
-}
-
-.hero p {
-    font-size: 1.2em;
-}
 
 .blog-posts {
     max-width: 1200px;

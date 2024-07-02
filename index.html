@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <meta property="og:image" content="https://weblot.gr/files/img/bg.png"/>
     <title>Weblot - Web Development Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/desktop.css">
     <link rel="stylesheet" href="./css/social.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <script src="https://grcodeclub.gr/js/jquery.js"></script>
@@ -15,25 +17,43 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo"><a href="#home"><img src="./files/img/logo-head.png" width="20%"></a></div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#post">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="show_desktop">
+            <nav>
+                <div class="logo"><a href="#home"><img src="./files/img/logo-head.png" width="20%"></a></div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#post">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="show_mobile">
+            <div class="logo"><a href="#home"><img src="./files/img/logo-head.png" width="20%" style="margin-left: 40%;"></a></div>
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                    <div class="spinner diagonal part-1"></div>
+                    <div class="spinner horizontal"></div>
+                    <div class="spinner diagonal part-2"></div>
+                </label>
+                <div id="sidebarMenu" style="overflow: auto;">
+                    <ul class="sidebarMenuInner">
+                        <li class="li-menu"><a href="#home">Home</a></li>
+                    <li class="li-menu"><a href="#about">About</a></li>
+                    <li class="li-menu"><a href="#post">Blog</a></li>
+                    <li class="li-menu"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+        </div>
     </header>
     <main>
-        <section  id="home" class="hero" style="height: 100vh;">
-            <br>
-            <img src="./files/img/logo-no-background.png" width="50%"><br><br><br><br>
+        <section  id="home" class="main-logo">
+            <img src="./files/img/logo-no-background.png"><br><br>
             <p style="font-size: 20px; color: #cacaca;">Κατασκευή Ιστοσελίδας <br>
                 Πληροφορική <br>
                 Προγραμματισμός
             </p>
-        </section>
+        </section><br><br><br><br><br>
         <div style="padding: 50px; " id="about"></div>
         <section style="background-color: #cacaca1e; margin-left: 3%; margin-right: 3%; border-radius: 10px; background-size: cover;">
             <br><h1 style="text-align: center; color: white; font-size: 30px;">About WebLot</h1>
@@ -89,11 +109,11 @@
                     <a href="https://maps.app.goo.gl/AQRnfjytCxVq2dtEA" target="_blank" class="mysocial" style="padding: 9px;"> <i class="fa fa-map" style="font-size: 24px;"></i> Αγιά Παρασκευή</a>
                 </div><br>
                 <div style="padding-left: 10%;  ">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25148.983007941948!2d23.805845432301986!3d38.00925605331193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a199a7aaf8b51f%3A0x910d6d7df6f564c6!2zzpHOsy4gzqDOsc-BzrHPg866zrXPhc6u!5e0!3m2!1sel!2sgr!4v1719833886425!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25148.983007941948!2d23.805845432301986!3d38.00925605331193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a199a7aaf8b51f%3A0x910d6d7df6f564c6!2zzpHOsy4gzqDOsc-BzrHPg866zrXPhc6u!5e0!3m2!1sel!2sgr!4v1719833886425!5m2!1sel!2sgr" class="map"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div><br><br><br><Br>
             <h1 style="text-align: center;" >Φόρμα Επικοινωνίας</h1>
-            <iframe  style="padding-left: 25%;  " src="https://docs.google.com/forms/d/e/1FAIpQLSfJdGJITEWdjPTuNKaNHLt-uBHvc23X8Ztn0EevfcqLXBDuDA/viewform?embedded=true" width="640" height="1090" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe class="forms" src="https://docs.google.com/forms/d/e/1FAIpQLSfJdGJITEWdjPTuNKaNHLt-uBHvc23X8Ztn0EevfcqLXBDuDA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
             <br><br><br>
         </section>

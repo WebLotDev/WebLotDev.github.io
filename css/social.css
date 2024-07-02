@@ -23,20 +23,19 @@
     padding: 0;
     z-index: 1000;
     right: 0;
-    background-color: black;
+    background-color: #2b123e;
     color: white;
 }
 .social-item a {
     display:block;
     position:relative;
     width:50px;
-    height:50px;
-    line-height:50px;
     font-size:34px;
     text-align:center;
     text-decoration:none;
     color:#ffffff;
     transition:.5s;
+    padding: 3px;
 }
  .social-item a span {
   position:absolute;
