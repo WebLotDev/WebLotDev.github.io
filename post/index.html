@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta property="og:image" content="https://weblot.gr/files/img/bg.png"/>
+    <title>Weblot - Web Development Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://weblot.gr/css/style.css">
+    <link rel="stylesheet" href="https://weblot.gr/css/mobile.css">
+    <link rel="stylesheet" href="https://weblot.gr/css/desktop.css">
+    <link rel="stylesheet" href="https://weblot.gr/css/social.css">
+    <link rel="icon" href="https://www.weblot.gr/files/img/logo.ico" type="image/x-icon">
+    <script src="https://grcodeclub.gr/js/jquery.js"></script>
+    <style>
+  .search-container {
+            display: flex;
+            justify-content: center;
+            margin: 12px 0;
+        }
+        .searchInput {
+            width: 50%;
+            padding: 12px;
+            border-radius: 20px;
+            border-color: blueviolet;
+            border-style:groove;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="show_desktop">
+            <nav>
+                <div class="logo"><a href="#home"><img src="https://weblot.gr/files/img/logo-head.png" width="20%"></a></div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#post">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="show_mobile">
+            <div class="logo"><a href="#home"><img src="https://weblot.gr/files/img/logo-head.png" width="20%" style="margin-left: 40%;"></a></div>
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu" style="overflow: auto;">
+                <ul class="sidebarMenuInner">
+                    <li class="li-menu"><a href="#home">Home</a></li>
+                    <li class="li-menu"><a href="#about">About</a></li>
+                    <li class="li-menu"><a href="#post">Blog</a></li>
+                    <li class="li-menu"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <br><br><br><br><br>
+        <div class="search-container">
+            <input type="text" class="searchInput" id="searchInput" placeholder="Αναζήτηση άρθρων...">
+        </div>        
+        <div style="padding: 10px;" id="post"></div>
+        <br><h1 style="text-align: center; color: white;">Post</h1>
+        <section class="blog-posts">
+            <article class="post" id="Οδηγός για την Κατασκευή Ιστοσελίδας">
+                <h2>Οδηγός για την Κατασκευή Ιστοσελίδας</h2>
+                <p>Η κατασκευή μιας ιστοσελίδας αποτελεί σημαντικό βήμα για την παρουσία σας στο διαδίκτυο, είτε πρόκειται για 
+                    προσωπικό blog, επαγγελματική σελίδα<br>...</p>
+                <a href="http://weblot.gr/post/2024/07/1" class="read-more">Read More</a>
+            </article>
+            <article class="post" id="Το χρωματικό Μοντέλο RGB">
+                <h2>Το χρωματικό Μοντέλο RGB</h2>
+                <p> Το χρησιμοποιούμε όταν σχεδιάζουμε και αποτελείται από 3 χρώματα τα οποία όταν τα συνδικάσουμε μπορούμε να δημιουργήσουμε και τα υπόλοιπά χρώματα.<br>
+                    ...</p>
+                <a href="http://weblot.gr/post/2024/07/2" class="read-more">Read More</a>
+            </article>
+        </section>
+        <br>
+        <br>
+    </main>
+    <div id="add_footer" ><script src="https://weblot.gr/js/social.js"></script></div>
+    <footer>
+        <p>&copy; 2024 Weblot. All rights reserved.</p>
+    </footer>
+    <!-- Προσθήκη JavaScript αρχείου για αναζήτηση -->
+    <script src="https://weblot.gr/js/search.js"></script>
+</body>
+</html>
