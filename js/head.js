@@ -20,3 +20,41 @@ cssLinks.forEach(linkUrl => {
     // Προσθήκη στο head
     head.appendChild(linkElement);
 });
+
+/////////////////
+/// Εισαγωγή Logo
+/////////////////
+
+
+// Δημιουργία στοιχείου <link> για το favicon .ico
+const icoFaviconLink = document.createElement('link');
+icoFaviconLink.rel = 'shortcut icon';
+icoFaviconLink.type = 'image/x-icon';
+icoFaviconLink.href = 'https://www.weblot.gr/files/img/logo.ico';
+
+// Προσθήκη του στοιχείου <link> στο <head> του εγγράφου
+document.head.appendChild(icoFaviconLink);
+
+
+///////////////////////////////
+// Θέτουμε το title της σελίδας
+///////////////////////////////
+document.title = 'WebLot';
+
+// Δημιουργία ενός νέου στοιχείου <meta>
+const metaElement = document.createElement('meta');
+
+
+///////////
+// ViewPort
+///////////
+
+// Ορίζουμε την ιδιότητα 'name' ως 'viewport'
+metaElement.setAttribute('name', 'viewport');
+
+// Ορίζουμε την ιδιότητα 'content' με την τιμή που θέλουμε
+// Σε αυτήν την περίπτωση, ορίζουμε initial-scale=0.8
+metaElement.setAttribute('content', 'width=device-width, initial-scale=0.8');
+
+// Προσθέτουμε το στοιχείο <meta> στο <head> του HTML εγγράφου
+document.head.appendChild(metaElement);
