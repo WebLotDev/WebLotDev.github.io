@@ -10,6 +10,19 @@ body {
     color: white;
 }
 
+  .search-container {
+            display: flex;
+            justify-content: center;
+            margin: 12px 0;
+        }
+        .searchInput {
+            width: 50%;
+            padding: 12px;
+            border-radius: 20px;
+            border-color: blueviolet;
+            border-style:groove;
+        }
+
 
 .blog-contact h1{
     font-size: 25px;  
