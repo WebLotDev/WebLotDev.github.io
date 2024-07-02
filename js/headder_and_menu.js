@@ -2,7 +2,7 @@ const htmlContent = `
 <header>
     <div class="show_desktop">
         <nav>
-            <div class="logo"><a href="https://weblot.gr/js/headder_and_menu.js"><img src="https://www.weblot.gr/files/img/logo-head.png" width="20%"></a></div>
+            <div class="logo"><a href="https://weblot.gr/js/"><img src="https://www.weblot.gr/files/img/logo-head.png" width="20%"></a></div>
             <ul>
                 <li><a href="www.weblot.gr">Home</a></li>
                 <li><a href="www.weblot.gr/#about">About</a></li>
