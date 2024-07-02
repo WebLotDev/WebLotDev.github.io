@@ -2,12 +2,12 @@ const htmlContent = `
 <header>
     <div class="show_desktop">
         <nav>
-            <div class="logo"><a href="https://weblot.gr/js/"><img src="https://www.weblot.gr/files/img/logo-head.png" width="20%"></a></div>
+            <div class="logo"><a href="https://weblot.gr/"><img src="https://www.weblot.gr/files/img/logo-head.png" width="20%"></a></div>
             <ul>
-                <li><a href="www.weblot.gr">Home</a></li>
-                <li><a href="www.weblot.gr/#about">About</a></li>
-                <li><a href="www.weblot.gr/post">Blog</a></li>
-                <li><a href="www.weblot.gr/#contact">Contact</a></li>
+                <li><a href="https://www.weblot.gr">Home</a></li>
+                <li><a href="https://www.weblot.gr/#about">About</a></li>
+                <li><a href="https://www.weblot.gr/post">Blog</a></li>
+                <li><a href="https://www.weblot.gr/#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -21,10 +21,10 @@ const htmlContent = `
             </label>
             <div id="sidebarMenu" style="overflow: auto;">
                 <ul class="sidebarMenuInner">
-                    <li class="li-menu"><a href="www.weblot.gr">Home</a></li>
-                <li class="li-menu"><a href="www.weblot.gr/#about">About</a></li>
-                <li class="li-menu"><a href="www.weblot.gr/post">Blog</a></li>
-                <li class="li-menu"><a href="www.weblot.gr/#contact">Contact</a></li>
+                    <li class="li-menu"><a href="https://www.weblot.gr">Home</a></li>
+                <li class="li-menu"><a href="https://www.weblot.gr/#about">About</a></li>
+                <li class="li-menu"><a href="https://www.weblot.gr/post">Blog</a></li>
+                <li class="li-menu"><a href="https://www.weblot.gr/#contact">Contact</a></li>
                 </ul>
             </div>
     </div>
