@@ -1,19 +1,19 @@
-// Αντιστοιχία του πεδίου αναζήτησης και των άρθρων
+// Αντιστοίχιση του πεδίου αναζήτησης και των άρθρων
 const searchInput = document.getElementById('searchInput');
 const articles = document.querySelectorAll('.post');
 
 // Λειτουργία φίλτρου για την αναζήτηση
-searchInput.addEventListener('keyup', function() {
-    const query = searchInput.value.toLowerCase();
+searchInput.addEventListener('input', function() {
+    const query = searchInput.value.trim().toLowerCase(); // Αφαίρεση κενών διαστημάτων και μετατροπή σε πεζά γράμματα
     
     articles.forEach(article => {
         const title = article.querySelector('h2').textContent.toLowerCase();
-        const content = article.querySelector('p').textContent.toLowerCase();
         
-        if (title.includes(query) || content.includes(query)) {
-            article.style.display = 'block';
+        // Έλεγχος αν ο τίτλος περιέχει τη φράση ως ακριβώς φράση
+        if (query === '' || title.includes(query)) {
+            article.style.display = 'block'; // Εμφάνιση άρθρου
         } else {
-            article.style.display = 'none';
+            article.style.display = 'none'; // Απόκρυψη άρθρου
         }
     });
 });
