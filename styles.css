@@ -33,6 +33,7 @@ body {
 header {
     background-color: #5A639C;
     color: #fff;
+        position: fixed;
     padding: 1rem 0;
 }
 
@@ -76,6 +77,8 @@ header nav ul li a {
 .services {
     background-color: #9B86BD;
     padding: 50px 0;
+        display: flex;
+
     text-align: center;
     color: #fff;
 }
@@ -87,7 +90,6 @@ header nav ul li a {
 
 .services-container {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
 }
 
