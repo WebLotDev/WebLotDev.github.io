@@ -33,6 +33,7 @@ body {
 header {
     background-color: #5A639C;
     color: #fff;
+    width: 100%;
         position: fixed;
     padding: 1rem 0;
 }
