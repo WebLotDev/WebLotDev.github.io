@@ -19,11 +19,10 @@
     position: fixed;
     display:flex;
     bottom: 0;
-    margin-bottom: 70px;
+    margin-right: 30px;
     padding: 0;
     z-index: 1000;
     right: 0;
-    background-color: #2b123e;
     color: white;
 }
 .social-item a {
