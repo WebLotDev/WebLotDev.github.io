@@ -87,6 +87,7 @@ header nav ul li a {
 
 .services-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
